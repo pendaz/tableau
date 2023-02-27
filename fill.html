@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!--La fill()méthode change tous les éléments d'un tableau en une valeur
+       statique, d'un index de début (default 0) à un index de  fin 
+       (default array.length). Il renvoie le tableau modifié.-->
+    <script>
+      const array1 = [1, 2, 3, 4];
+
+      // Fill with 0 from position 2 until position 4
+      console.log(array1.fill(0, 2, 4));
+      // Expected output: Array [1, 2, 0, 0]
+
+      // Fill with 5 from position 1
+      console.log(array1.fill(5, 1));
+      // Expected output: Array [1, 5, 5, 5]
+
+      console.log(array1.fill(6));
+      // Expected output: Array [6, 6, 6, 6]
+    </script>
+  </head>
+  <body></body>
+</html>

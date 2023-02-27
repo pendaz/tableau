@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!--La slice()méthode renvoie une copie superficielle d'une partie d'un tableau
+    dans un nouvel objet tableau sélectionné de startà end 
+    ( endnon inclus) où startet 
+    endreprésentent l'index des éléments de ce tableau.
+     Le tableau d'origine ne sera pas modifié.-->
+    <!--supprime les donner anvant le numero precis
+    de la gauche ver-->
+    <script>
+      const animals = ["ant", "bison", "camel", "duck", "elephant"];
+
+      console.log(animals.slice(2));
+      // Expected output: Array ["camel", "duck", "elephant"]
+
+      console.log(animals.slice(2, 4));
+      // Expected output: Array ["camel", "duck"]
+
+      console.log(animals.slice(1, 5));
+      // Expected output: Array ["bison", "camel", "duck", "elephant"]
+
+      console.log(animals.slice(-2));
+      // Expected output: Array ["duck", "elephant"]
+
+      console.log(animals.slice(2, -1));
+      // Expected output: Array ["camel", "duck"]
+
+      console.log(animals.slice());
+      // Expected output: Array ["ant", "bison", "camel", "duck", "elephant"]
+    </script>
+  </head>
+  <body></body>
+</html>

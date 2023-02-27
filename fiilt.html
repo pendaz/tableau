@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!--La filter()méthode crée une copie superficielle d'une partie d'un tableau
+   donné, filtrée uniquement pour les éléments du tableau donné
+             qui réussissent le test implémenté par la fonction fournie-->
+
+    <script>
+      const nums = [14, 2, 6, 4, 0, 8];
+      const num1 = nums.filter((num) => {
+        return num > 4;
+      });
+      console.log(num1);
+      // return tout num > 4
+    </script>
+  </head>
+  <body></body>
+</html>

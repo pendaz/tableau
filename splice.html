@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!--La splice()méthode modifie le contenu d'un tableau en supprimant ou
+         en remplaçant des éléments existants et/ou en ajoutant de nouveaux
+          éléments en place . Pour accéder à une partie d'un tableau sans le modifier, voir slice()-->
+    <!--for in pour iterer sur les cles dun objet-->
+    <script>
+      const months = ["Jan", "March", "April", "June"];
+      months.splice(1, 0, "Feb");
+      // Inserts at index 1
+      console.log(months);
+      // Expected output: Array ["Jan", "Feb", "March", "April", "June"]
+
+      months.splice(4, 1, "May");
+      // Replaces 1 element at index 4
+      console.log(months);
+      // Expected output: Array ["Jan", "Feb", "March", "April", "May"]
+    </script>
+  </head>
+  <body></body>
+</html>

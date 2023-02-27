@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!--La values()méthode renvoie un nouvel objet itérateur de tableau qui 
+      itère la valeur de chaque élément du tableau.-->
+    <script>
+      function palindrome(str) {
+        if (str.split("").reverse().join("") === str) {
+          console.log("c un oui c palindrome");
+        } else {
+          console.log("Non c Pas palindrome");
+        }
+      }
+      palindrome("salut");
+      // Expected output: "c"
+    </script>
+  </head>
+  <body></body>
+</html>

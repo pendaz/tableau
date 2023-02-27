@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!--La at()méthode prend une valeur entière et renvoie l'élément 
+      à cet index, en autorisant les entiers positifs et négatifs. Les entiers
+       négatifs comptent à rebours à partir du dernier élément du tableau.-->
+    <script>
+      const array1 = [5, 12, 8, 130, 44];
+
+      let index = 2;
+
+      console.log(
+        `Using an index of ${index} the item returned is ${array1.at(index)}`
+      );
+      // Expected output: "Using an index of 2 the item returned is 8"
+
+      index = -2;
+
+      console.log(
+        `Using an index of ${index} item returned is ${array1.at(index)}`
+      );
+      // on decompte a partir de 44 ki es -1 donc -2 est 130"
+    </script>
+  </head>
+  <body></body>
+</html>
